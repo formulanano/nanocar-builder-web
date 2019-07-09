@@ -3,7 +3,6 @@
 /*  Layout */
 body {
   display: flex;
-  background: #000000;
 }
 #root {
   flex: 1;
@@ -19,9 +18,9 @@ body {
 /* menu */
 .ui.toolBar.vertical.menu {
   border-radius: 0;
-  margin: 0;
   border-top: 0;
   box-shadow: none;
+  margin: auto 0;
   &>.item {
     border-radius: 0;
   }
@@ -29,7 +28,19 @@ body {
 
 
 /* scene */
+#mainScene {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: #474747;
+  flex:1
+}
 #boardCanvas {
   flex:1
 }
 
+#helperCanvas {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
