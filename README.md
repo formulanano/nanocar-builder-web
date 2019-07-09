@@ -1,3 +1,7 @@
+<a href="https://discord.gg/54ySkdv">
+  <img src="https://img.shields.io/discord/598249771676860416.svg?logo=discord" alt="chat on Discord">
+</a>
+            
 # nanocar-builder-web
 Web based nanocar builder using `three.js`.
 
