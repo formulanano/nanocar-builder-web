@@ -7,8 +7,10 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-fps-stats": "^0.1.1",
     "react-scripts": "3.0.1",
     "three": "^0.106.2",
     "three-orbit-controls": "^82.1.0"
