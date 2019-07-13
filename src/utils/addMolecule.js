@@ -1,4 +1,3 @@
-import * as THREE from "three";
 import { atomVisData } from "../data";
 import addAtom from "./addAtom";
 
