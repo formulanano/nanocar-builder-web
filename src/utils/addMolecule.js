@@ -1,6 +1,16 @@
 import { atomVisData } from "../data";
 import addAtom from "./addAtom";
 
+/**
+ * addMolecule
+ *
+ * @type {Function} uses addAtom function to generate molecules
+ *
+ * @param {Object} scene
+ * @param {Array} moleculeName
+ *
+ */
+
 const addMolecule = (scene, moleculeName) => {
   let atomRadius, atomColor, atomCoor;
   for (var atomIndex = 0; atomIndex < moleculeName.length; atomIndex++) {
