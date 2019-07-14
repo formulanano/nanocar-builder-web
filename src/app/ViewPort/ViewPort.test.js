@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
-import ViewPort from "./ViewPort";
+import Viewport from "./Viewport";
 
 it("renders without crashing", () => {
-  shallow(<ViewPort />);
+  shallow(<Viewport />);
 });

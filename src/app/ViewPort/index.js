@@ -1,3 +1,3 @@
-import ViewPort from "./ViewPort";
+import Viewport from "./Viewport";
 
-export default ViewPort;
+export default Viewport;
