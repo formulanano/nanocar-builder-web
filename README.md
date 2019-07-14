@@ -1,30 +1,30 @@
+# nanocar-builder-web
+
 <a href="https://discord.gg/54ySkdv">
   <img src="https://img.shields.io/discord/598249771676860416.svg?logo=discord" alt="chat on Discord">
 </a>
-
-# nanocar-builder-web
 
 Web based nanocar builder using `three.js`.
 
 ## Getting Started
 
-**1. Clone the repo**
+1- Clone the repo
 
-```
-$ git clone git@github.com:formulanano/nanocar-builder-web.git
-$ cd nanocar-builder-web
-```
-
-**2. Install dependencies**
-
-```
-$ npm install
+```bash
+git clone git@github.com:formulanano/nanocar-builder-web.git
+cd nanocar-builder-web
 ```
 
-**3. Start Run**
+2- Install dependencies
 
+```bash
+npm install
 ```
-$ npm start
+
+3- Start Run
+
+```bash
+npm start
 ```
 
 This will initiate the project at `http://localhost:3000`.
