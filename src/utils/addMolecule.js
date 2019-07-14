@@ -12,9 +12,11 @@ import addAtom from "./addAtom";
  */
 
 const addMolecule = (scene, moleculeName) => {
-  let atomRadius, atomColor, atomCoor;
-  for (var atomIndex = 0; atomIndex < moleculeName.length; atomIndex++) {
-    for (var visIndex = 0; visIndex < atomVisData.name.length; visIndex++) {
+  let atomRadius;
+  let atomColor;
+  let atomCoor;
+  for (let atomIndex = 0; atomIndex < moleculeName.length; atomIndex += 1) {
+    for (let visIndex = 0; visIndex < atomVisData.name.length; visIndex += 1) {
       if (moleculeName[atomIndex][3] === atomVisData.name[visIndex]) {
         atomRadius = atomVisData.radius[visIndex] / 100;
         atomColor = atomVisData.color[visIndex];
