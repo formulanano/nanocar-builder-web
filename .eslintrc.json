@@ -2,8 +2,16 @@
   "parser": "babel-eslint",
   "extends": ["react-app", "airbnb", "prettier"],
   "plugins": ["prettier", "jest"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
   "rules": {
     "prettier/prettier": ["error"],
+    "max-len": [1, 120, 2, {"ignoreComments": true}],
     "react/jsx-filename-extension": [
       1,
       {
