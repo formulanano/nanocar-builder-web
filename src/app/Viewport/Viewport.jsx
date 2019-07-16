@@ -6,9 +6,9 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { FPSMonitor } from "../commons";
-import { addLine, addMolecule } from "../../utils";
+import FPSMonitor from "../commons";
 import { nanocar } from "../../data";
+import { addLine, addMolecule } from "../../utils";
 
 // get OrbitControls object
 const OrbitControls = require("three-orbit-controls")(THREE);
