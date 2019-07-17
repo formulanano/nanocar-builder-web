@@ -1,1 +1,3 @@
-export { default as FPSMonitor } from "./FPSMonitor";
+import FPSMonitor from "./FPSMonitor";
+
+export default FPSMonitor;
