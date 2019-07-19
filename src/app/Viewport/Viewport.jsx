@@ -28,7 +28,7 @@ const Viewport = () => {
     // three.js variables
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 20000);
-    const light = new THREE.PointLight(0xffffff); // white light
+    const light = new THREE.HemisphereLight(0xe0e0e0, 0x333333, 1);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     let frameId;
 
