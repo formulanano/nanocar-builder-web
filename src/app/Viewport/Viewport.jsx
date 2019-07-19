@@ -9,7 +9,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import FPSMonitor from "../commons";
 import { nanocar } from "../../data";
-import { addLine, addMolecule } from "../../utils";
+import { addMolecule } from "../../utils";
 
 /**
  * Viewport
@@ -67,19 +67,9 @@ const Viewport = () => {
       camera.position.z = z;
     };
 
-    // axis parameters
-    const axisLength = 30;
-    const red = 0xe53935; // in respect to x-axis
-    const green = 0x00e676; // in respect to y-axis
-    const blue = 0x1976d2; // in respect to z-axis
-
-    // add axis lines
-    // x-axis
-    addLine(scene, [axisLength, 0, 0], [-axisLength, 0, 0], red);
-    // y-axis
-    addLine(scene, [0, axisLength, 0], [0, -axisLength, 0], green);
-    // z-axis
-    addLine(scene, [0, 0, axisLength], [0, 0, -axisLength], blue);
+    // add axes helper
+    const axesHelper = new THREE.AxesHelper(30);
+    scene.add(axesHelper);
 
     const animate = () => {
       frameId = window.requestAnimationFrame(animate);
