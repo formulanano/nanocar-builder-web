@@ -1,11 +1,11 @@
-# Formula Nano Builder Governance
+# Nanocar-Builder Governance
 
-Formula Nano Builder is an open source project that depends on contributions from the community.
+Nanocar-Builder is an open source project that depends on contributions from the community.
 
 ## Overview
 
 Formula Nano houses projects related to nano technology.
-Our mission on Formula Nano Builder is to create scientific tool for building and simulating molacular cars.
+Our mission on Nanocar-Builder is to create scientific tool for building and simulating molacular cars.
 We value an open, collaborative, and diverse community where anyone can join in
 discussions, learn from one another, and contribute to the project. This document describes how
 we govern ourselves, how decisions are made, and how someone could engage with the project.
@@ -14,7 +14,7 @@ we govern ourselves, how decisions are made, and how someone could engage with t
 
 ### Users
 
-Users are members of the community that are using Formula Nano Builder or one of Formula Nano's projects. Anyone
+Users are members of the community that are using Nanocar-Builder or one of Formula Nano's projects. Anyone
 can be a user and we encourage users to participate in the community as much as possible in the
 following ways.
 
@@ -26,7 +26,7 @@ friends.
 
 ### Contributors
 
-Contributors are members of the community who contribute to Formula Nano Builder or one of Formula Nano's projects
+Contributors are members of the community who contribute to Nanocar-Builder or one of Formula Nano's projects
 in concrete ways. Anyone can be a contributor. In addition to their participation as a user, they
 also contribute in the following ways.
 
@@ -41,7 +41,7 @@ and [issues](https://github.com/formulanano/nanocar-builder-web/issues).
 ### Committers
 
 Committers are members of the community who are committed to the development, success, and mission
-of Formula Nano Builder or one of Formula Nano's projects. New committers are nominated and voted on by existing
+of Nanocar-Builder or one of Formula Nano's projects. New committers are nominated and voted on by existing
 committers. Under rare circumstances, the Core Team can vote to revoke a committer's privilege. In
 addition to their participation as a contributor, committers have the following privileges.
 
