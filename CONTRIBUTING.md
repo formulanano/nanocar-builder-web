@@ -65,7 +65,7 @@ yarn
 
 ### Building locally
 
-To use the provided build scripts with yarn you have latest `npm` installed on your system and then just run `npm run build`.
+To use the provided build scripts with yarn make sure you have the latest `npm` installed on your system and then just run `npm run build`.
 
 ### Coding style
 

@@ -5,7 +5,7 @@ Nanocar-Builder is an open source project that depends on contributions from the
 ## Overview
 
 Formula Nano houses projects related to nano technology.
-Our mission on Nanocar-Builder is to create scientific tool for building and simulating molacular cars.
+Our mission on Nanocar-Builder is to create a scientific tool for building and simulating molecular cars.
 We value an open, collaborative, and diverse community where anyone can join in
 discussions, learn from one another, and contribute to the project. This document describes how
 we govern ourselves, how decisions are made, and how someone could engage with the project.
@@ -16,11 +16,11 @@ we govern ourselves, how decisions are made, and how someone could engage with t
 
 Users are members of the community that are using Nanocar-Builder or one of Formula Nano's projects. Anyone
 can be a user and we encourage users to participate in the community as much as possible in the
-following ways.
+following ways:
 
 - Evangelize Formula Nano by [linking to our website](https://formulanano.com/),
-[following us on twitter](https://twitter.com/formulanano), or just talking about us with your
-friends.
+[following us on twitter](https://twitter.com/formulanano), [joining our discord server](https://discord.gg/zAnjADr)
+or just talking about us with your friends.
 - Tell us what we're doing well or where we can improve.
 - Give us moral support. A "Thank You" always brightens our day!
 
@@ -28,7 +28,7 @@ friends.
 
 Contributors are members of the community who contribute to Nanocar-Builder or one of Formula Nano's projects
 in concrete ways. Anyone can be a contributor. In addition to their participation as a user, they
-also contribute in the following ways.
+also contribute in the following ways:
 
 - Support new users by answering questions on
 [StackOverflow](https://stackoverflow.com/questions/tagged/formulanano) and
@@ -53,9 +53,9 @@ addition to their participation as a contributor, committers have the following 
 
 ### Core Team
 
-Core Team members are individuals that are invested in the success of Formula Nano. Their
-administrative responsibilities ensure the sustainability and smooth running of Formula Nano. New
-Core Team members are nominated and voted on by existing committers. Under rare circumstances, a
+Core Team members are individuals that are invested in the success of Formula Nano.
+Their administrative responsibilities ensure the sustainability and smooth-running of Formula Nano.
+New Core Team members are nominated and voted on by existing committers. Under rare circumstances, a
 Core Team member can be removed by a two thirds majority vote by the Core Team. Two people
 from the same company cannot exist on the Core Team.
 
