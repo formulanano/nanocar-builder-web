@@ -6,12 +6,10 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import FPSMonitor from "../commons";
 import { nanocar } from "../../data";
-import { addLine, addMolecule } from "../../utils";
-
-// get OrbitControls object
-const OrbitControls = require("three-orbit-controls")(THREE);
+import { addMolecule } from "../../utils";
 
 /**
  * Viewport
@@ -30,7 +28,7 @@ const Viewport = () => {
     // three.js variables
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 20000);
-    const light = new THREE.PointLight(0xffffff); // white light
+    const light = new THREE.HemisphereLight(0xe0e0e0, 0x333333, 1);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     let frameId;
 
@@ -69,19 +67,9 @@ const Viewport = () => {
       camera.position.z = z;
     };
 
-    // axis parameters
-    const axisLength = 30;
-    const red = 0xe53935; // in respect to x-axis
-    const green = 0x00e676; // in respect to y-axis
-    const blue = 0x1976d2; // in respect to z-axis
-
-    // add axis lines
-    // x-axis
-    addLine(scene, [axisLength, 0, 0], [-axisLength, 0, 0], red);
-    // y-axis
-    addLine(scene, [0, axisLength, 0], [0, -axisLength, 0], green);
-    // z-axis
-    addLine(scene, [0, 0, axisLength], [0, 0, -axisLength], blue);
+    // add axes helper
+    const axesHelper = new THREE.AxesHelper(30);
+    scene.add(axesHelper);
 
     const animate = () => {
       frameId = window.requestAnimationFrame(animate);
