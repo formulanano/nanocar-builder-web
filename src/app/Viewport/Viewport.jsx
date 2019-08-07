@@ -47,7 +47,6 @@ const Viewport = () => {
       controls.panSpeed = 0.8;
       controls.enableDamping = true;
       controls.dampingFactor = 0.07;
-      controls.rotateSpeed = 0.07;
       controls.update();
     };
 
@@ -97,11 +96,7 @@ const Viewport = () => {
 
   return (
     <>
-      <section
-        id="viewport"
-        ref={viewportRef}
-        style={{ width: "100%", height: "100%", overflow: "hidden" }}
-      />
+      <section id="viewport" ref={viewportRef} style={{ width: "100%", height: "100%", overflow: "hidden" }} />
       <FPSMonitor />
     </>
   );
