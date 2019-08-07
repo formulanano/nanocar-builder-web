@@ -14,7 +14,7 @@
     "react-dom": "^16.8.6",
     "react-fps-stats": "^0.1.2",
     "react-scripts": "3.0.1",
-    "three": "^0.106.2"
+    "three": "^0.107.0"
   },
   "scripts": {
     "start": "react-scripts start",
