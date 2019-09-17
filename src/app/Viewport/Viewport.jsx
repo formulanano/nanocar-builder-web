@@ -77,7 +77,10 @@ const Viewport = () => {
     };
 
     // initialize parameters and animate
+    light.position.set(-100, 200, 100); // set light position
+    scene.add(light); // add scene light
     scene.background = new THREE.Color(0x121212); // set scene background color
+    renderer.setSize(width, height); // set scene size
     viewportRef.current.appendChild(renderer.domElement);
     initOrbits();
     initCamera(-40, 20, 40);
