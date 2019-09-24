@@ -6,10 +6,12 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import FPSMonitor from "../commons";
 import { nanocar } from "../../data";
 import { addMolecule } from "../../utils";
+
+// get OrbitControls
+const OrbitControls = require("three-orbitcontrols");
 
 /**
  * Viewport
