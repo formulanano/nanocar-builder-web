@@ -1,3 +1,1 @@
-import ThemeLayer from "./ThemeLayer";
-
-export default ThemeLayer;
+export { default } from "./ThemeLayer";

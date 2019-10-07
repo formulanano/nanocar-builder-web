@@ -6,10 +6,12 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import FPSMonitor from "../commons";
 import { nanocar } from "../../data";
 import { addMolecule } from "../../utils";
+
+// get OrbitControls
+const OrbitControls = require("three-orbitcontrols");
 
 /**
  * Viewport
@@ -47,7 +49,6 @@ const Viewport = () => {
       controls.panSpeed = 0.8;
       controls.enableDamping = true;
       controls.dampingFactor = 0.07;
-      controls.rotateSpeed = 0.07;
       controls.update();
     };
 
@@ -78,10 +79,10 @@ const Viewport = () => {
     };
 
     // initialize parameters and animate
-    light.position.set(-100, 200, 100);
-    scene.add(light);
-    renderer.setSize(width, height);
-    renderer.setClearColor(0x0); // 0xFFFFFF corresponds to white
+    light.position.set(-100, 200, 100); // set light position
+    scene.add(light); // add scene light
+    scene.background = new THREE.Color(0x121212); // set scene background color
+    renderer.setSize(width, height); // set scene size
     viewportRef.current.appendChild(renderer.domElement);
     initOrbits();
     initCamera(-40, 20, 40);
@@ -97,11 +98,7 @@ const Viewport = () => {
 
   return (
     <>
-      <section
-        id="viewport"
-        ref={viewportRef}
-        style={{ width: "100%", height: "100%", overflow: "hidden" }}
-      />
+      <section id="viewport" ref={viewportRef} style={{ width: "100%", height: "100%", overflow: "hidden" }} />
       <FPSMonitor />
     </>
   );
