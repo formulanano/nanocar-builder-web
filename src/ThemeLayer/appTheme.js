@@ -8,7 +8,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 const palette = {
   type: "dark",
   primary: { main: "#2962ff" },
-  secondary: { main: "#ffc107" }
+  secondary: { main: "#ffc107" },
 };
 
 /**
@@ -17,7 +17,7 @@ const palette = {
  * @type {Object} overrides material-ui typography
  */
 const typography = {
-  htmlFontSize: 17
+  htmlFontSize: 17,
 };
 
 /**
@@ -25,6 +25,6 @@ const typography = {
  *
  * @type {String}
  */
-const themeName = "Dark";
+const themeName = "DARK";
 
 export default createMuiTheme({ palette, typography, themeName });
