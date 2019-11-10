@@ -7,6 +7,7 @@
 import React from "react";
 import "./App.scss";
 import ThemeLayer from "./ThemeLayer";
+import ReduxLayer from "./ReduxLayer";
 import Viewport from "./app/Viewport";
 
 /**
@@ -16,9 +17,11 @@ import Viewport from "./app/Viewport";
  */
 function App() {
   return (
-    <ThemeLayer>
-      <Viewport />
-    </ThemeLayer>
+    <ReduxLayer>
+      <ThemeLayer>
+        <Viewport />
+      </ThemeLayer>
+    </ReduxLayer>
   );
 }
 
