@@ -5,7 +5,7 @@
  */
 import { createStore, compose } from "redux";
 import createRootReducer from "./modules";
-import { loadState } from "../localStorage";
+import { loadState } from "../localStorage/localStorage";
 
 /**
  * persistedState
