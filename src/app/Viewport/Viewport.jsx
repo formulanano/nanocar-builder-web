@@ -6,7 +6,7 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import FPSMonitor from "../commons";
+import { makeStyles } from "@material-ui/core/styles";
 import { nanocar } from "../../data";
 import { addMolecule } from "../../utils";
 
@@ -14,11 +14,26 @@ import { addMolecule } from "../../utils";
 const OrbitControls = require("three-orbitcontrols");
 
 /**
+ * useStyles
+ *
+ * @type {Function} generates CSS styles using material-ui's makeStyles function
+ */
+const useStyles = makeStyles(() => ({
+  viewport: {
+    width: "100vw",
+    height: "100vh",
+    overflow: "hidden",
+    position: "absolute",
+  },
+}));
+
+/**
  * Viewport
  *
  * @type {Function} renders Viewport component
  */
 const Viewport = () => {
+  const classes = useStyles();
   const viewportRef = useRef(null);
 
   useEffect(() => {
@@ -98,8 +113,7 @@ const Viewport = () => {
 
   return (
     <>
-      <section id="viewport" ref={viewportRef} style={{ width: "100%", height: "100%", overflow: "hidden" }} />
-      <FPSMonitor />
+      <section id="viewport" className={classes.viewport} ref={viewportRef} />
     </>
   );
 };
