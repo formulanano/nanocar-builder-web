@@ -7,6 +7,7 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { makeStyles } from "@material-ui/core/styles";
+import ContorlBar from "./components/ContorlBar";
 import { nanocar } from "../../data";
 import { addMolecule } from "../../utils";
 
@@ -114,6 +115,7 @@ const Viewport = () => {
   return (
     <>
       <section id="viewport" className={classes.viewport} ref={viewportRef} />
+      <ContorlBar />
     </>
   );
 };
