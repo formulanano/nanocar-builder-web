@@ -28,7 +28,7 @@ import DestroyNanocarIcon from "@material-ui/icons/DeleteForever";
 import { ControlButton, AddButton } from "./components";
 
 // Import component styles
-import useStyles from "./styles";
+import useStyles from "./ControlBar.styles";
 
 /**
  * ControlBar

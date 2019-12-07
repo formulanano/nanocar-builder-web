@@ -6,27 +6,13 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { makeStyles } from "@material-ui/core/styles";
 import ContorlBar from "./components/ContorlBar";
 import { nanocar } from "../../data";
 import { addMolecule } from "../../utils";
+import useStyles from "./Viewport.styles";
 
 // get OrbitControls
 const OrbitControls = require("three-orbitcontrols");
-
-/**
- * useStyles
- *
- * @type {Function} generates CSS styles using material-ui's makeStyles function
- */
-const useStyles = makeStyles(() => ({
-  viewport: {
-    width: "100vw",
-    height: "100vh",
-    overflow: "hidden",
-    position: "absolute",
-  },
-}));
 
 /**
  * Viewport

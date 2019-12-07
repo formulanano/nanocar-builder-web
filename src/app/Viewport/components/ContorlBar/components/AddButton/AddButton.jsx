@@ -7,23 +7,9 @@
  */
 
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import { Fab, Tooltip } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
-
-const useStyles = makeStyles(() => ({
-  fabContainer: {
-    width: "80px",
-    height: "80px",
-    position: "absolute",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: "100%",
-    marginTop: "-40px",
-    background: "transparent",
-  },
-}));
+import useStyles from "./AddButton.styles";
 
 /**
  * AddButton

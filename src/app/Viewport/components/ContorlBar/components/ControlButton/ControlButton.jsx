@@ -5,15 +5,8 @@
  */
 import React from "react";
 import PropTypes from "prop-types";
-import { makeStyles } from "@material-ui/core/styles";
 import { IconButton, Tooltip } from "@material-ui/core";
-
-const useStyles = makeStyles(theme => ({
-  button: {
-    height: "100%",
-    margin: theme.spacing(0.5),
-  },
-}));
+import useStyles from "./ControlButton.styles";
 
 /**
  * ControlButton
