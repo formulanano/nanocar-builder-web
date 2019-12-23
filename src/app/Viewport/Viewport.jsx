@@ -6,9 +6,10 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import FPSMonitor from "../commons";
+import ContorlBar from "./components/ContorlBar";
 import { nanocar } from "../../data";
 import { addMolecule } from "../../utils";
+import useStyles from "./Viewport.styles";
 
 // get OrbitControls
 const OrbitControls = require("three-orbitcontrols");
@@ -19,6 +20,7 @@ const OrbitControls = require("three-orbitcontrols");
  * @type {Function} renders Viewport component
  */
 const Viewport = () => {
+  const classes = useStyles();
   const viewportRef = useRef(null);
 
   useEffect(() => {
@@ -98,8 +100,8 @@ const Viewport = () => {
 
   return (
     <>
-      <section id="viewport" ref={viewportRef} style={{ width: "100%", height: "100%", overflow: "hidden" }} />
-      <FPSMonitor />
+      <section id="viewport" className={classes.viewport} ref={viewportRef} />
+      <ContorlBar />
     </>
   );
 };
