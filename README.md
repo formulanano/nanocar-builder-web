@@ -4,6 +4,8 @@
   <img src="https://img.shields.io/discord/598249771676860416.svg?logo=discord" alt="chat on Discord">
 </a>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/82c6bc8f-bd47-4db8-8133-23c10fa34436/deploy-status)](https://app.netlify.com/sites/formulanano/deploys)
+
 Web based nanocar builder using `three.js`.
 
 ## Getting Started
