@@ -8,6 +8,8 @@
 
 Web based nanocar builder using `three.js`.
 
+Check it out on [builder.formulanano.com](https://builder.formulanano.com)
+
 ## Getting Started
 
 1- Clone the repo
