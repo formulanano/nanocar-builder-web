@@ -20,11 +20,7 @@ const addMolecule = (scene, moleculeName) => {
       if (moleculeName[atomIndex][3] === atomVisData.name[visIndex]) {
         atomRadius = atomVisData.radius[visIndex] / 100;
         atomColor = atomVisData.color[visIndex];
-        atomCoor = [
-          moleculeName[atomIndex][0],
-          moleculeName[atomIndex][1],
-          moleculeName[atomIndex][2]
-        ];
+        atomCoor = [moleculeName[atomIndex][0], moleculeName[atomIndex][1], moleculeName[atomIndex][2]];
         addAtom(scene, atomCoor, atomRadius, atomColor);
       }
     }
