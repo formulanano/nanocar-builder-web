@@ -6,7 +6,7 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import ContorlBar from "./components/ContorlBar";
+import { ControlBar, SettingsButton } from "./components";
 import { nanocar } from "../../data";
 import { addMolecule } from "../../utils";
 import useStyles from "./Viewport.styles";
@@ -101,7 +101,8 @@ const Viewport = () => {
   return (
     <>
       <section id="viewport" className={classes.viewport} ref={viewportRef} />
-      <ContorlBar />
+      <SettingsButton />
+      <ControlBar />
     </>
   );
 };

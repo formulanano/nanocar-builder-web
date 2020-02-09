@@ -1,1 +1,1 @@
-export { default as ControlBar } from "./ContorlBar";
+export { default as SettingsButton } from "./SettingsButton";
