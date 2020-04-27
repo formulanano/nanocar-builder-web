@@ -13,7 +13,7 @@ import useStyles from "./ControlButton.styles";
  *
  * @type {Function} renders ControlButton component
  */
-const ControlButton = props => {
+const ControlButton = (props) => {
   const classes = useStyles();
   const { label, children } = props;
   return (
