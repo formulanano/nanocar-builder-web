@@ -132,7 +132,7 @@ We will only accept a pull request for which all tests pass. Make sure the follo
   - It includes relevant tests.
   - If this is a common use case, considered adding an example to the documentation.
 - If a bug is being fixed, test cases that fail without the fix are included.
-- The code is formating by `git commit`, or run `npm run prettier`.
+- The code is formating by `git commit`, or run `yarn run prettier`.
 - The PR title follows the pattern `[Component] Imperative commit message`. (See: [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/#imperative) for a great explanation)
 
 ## Getting started
@@ -157,12 +157,12 @@ yarn
 
 ### Building locally
 
-To use the provided build scripts with yarn make sure you have the latest `npm` installed on your system and then just run `npm run build`.
+To use the provided build scripts with yarn make sure you have the latest `yarn` installed on your system and then just run `yarn build`.
 
 ### Coding style
 
-Please follow the coding style of the project. Nanocar-Builder uses eslint, so if possible, enable linting in your editor to get real-time feedback. The linting rules can be run manually with the following command `npm run eslint`.
+Please follow the coding style of the project. Nanocar-Builder uses eslint, so if possible, enable linting in your editor to get real-time feedback. The linting rules can be run manually with the following command `yarn run eslint`.
 
-You can also run `npm run prettier` to reformat the code.
+You can also run `yarn run prettier` to reformat the code.
 
 Finally, when you submit a pull request, they are run again by CI, but hopefully by then your code is already clean!
