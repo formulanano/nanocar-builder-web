@@ -18,14 +18,12 @@ import theme from "./appTheme";
  * @type {Function}
  */
 
-const ThemeLayer = ({ children }) => {
-  return (
-    <MuiThemeProvider theme={theme}>
-      <CssBaseline />
-      {children}
-    </MuiThemeProvider>
-  );
-};
+const ThemeLayer = ({ children }) => (
+  <MuiThemeProvider theme={theme}>
+    <CssBaseline />
+    {children}
+  </MuiThemeProvider>
+);
 
 ThemeLayer.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
