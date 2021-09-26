@@ -29,9 +29,7 @@ store.subscribe(
  * @type {Function} passes children with redux store and configurations
  */
 
-const ReduxLayer = ({ children }) => {
-  return <Provider store={store}>{children}</Provider>;
-};
+const ReduxLayer = ({ children }) => <Provider store={store}>{children}</Provider>;
 
 ReduxLayer.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
