@@ -1,4 +1,4 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 
 /**
  * palette
@@ -27,4 +27,4 @@ const typography = {
  */
 const themeName = "DARK";
 
-export default createMuiTheme({ palette, typography, themeName });
+export default createTheme({ palette, typography, themeName });
